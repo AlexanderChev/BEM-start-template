@@ -1,0 +1,11 @@
+@mixin centered-align($align) {
+  @if $align==vertical {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @else if $align==horizontal {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  position: absolute;
+}

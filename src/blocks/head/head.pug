@@ -1,0 +1,80 @@
+mixin head(data)
+  head
+    meta(charset="utf-8")
+    // SEO
+    title title
+    meta(name="author" content="автор")
+    meta(name="description" content="описание")
+    meta(name="keywords" content="ключевые слова")
+    meta(name="copyright" content="")
+    meta(http-equiv="Reply-to" content="description")
+    meta(itemprop="name" content="Название сайта")
+    meta(itemprop="description" content="описание сайта")
+    meta(itemprop="image" content="https://website.com/image250X250.png")
+    meta(name="twitter:card" content="summary")
+    meta(name="twitter:site" content="название сайта")
+    meta(name="twitter:title" content="название страницы")
+    meta(name="twitter:description" content="описание")
+    meta(name="twitter:creator" content="автор")
+    meta(name="twitter:image:src" content ="https://website.com/image250X250.png")
+    meta(name="twitter:domain" content="website.com")
+    meta(property="og:type" content="profile")
+    meta(property="profile:first_name" content="имя")
+    meta(property="profile:last_name" content="фамилия")
+    meta(property="profile:username" content="ник")
+    meta(property="og:title" content="название страницы")
+    meta(property="og:description" content="описание")
+    meta(property="og:image" content="https://website.com/image250X250.png")
+    meta(property="og:url" content="http://www.site.com")
+    meta(property="og:site_name" content="название сайта")
+    meta(property="og:see_also" content="http://www.website.com")
+    meta(property="og:locale" content="ru_RU")
+
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(http-equiv="x-ua-compatible" content="ie=edge")
+    meta(http-equiv="msthemecompatible" content="no")
+    meta(http-equiv="imagetoolbar" content="no")
+    meta(name="format-detection" content="telephone=no")
+    meta(name="format-detection" content="address=no")
+    meta(name="author" content="humans.txt")
+
+    // Web Application Manifest
+    link(rel="manifest" href="assets/images/touch/manifest.json")
+
+    // Color the status bar on mobile devices
+    meta(name="theme-color" content="#000")
+
+    // Add to homescreen for Chrome on Android
+    meta(name="mobile-web-app-capable" content="yes")
+    meta(name="application-name" content="application")
+    link(rel="icon" type="image/png" sizes="36x36" href="assets/images/touch/android-icon-36x36.png")
+    link(rel="icon" type="image/png" sizes="48x48" href="assets/images/touch/android-icon-48x48.png")
+
+    // Tile icon for Win8 (144x144 + tile color)
+    meta(name="msapplication-TileImage" content="assets/images/touch/ms-icon-144x144.png")
+    meta(name="msapplication-TileColor" content="#000")
+    meta(name="msapplication-navbutton-color" content="#000")
+    meta(name="msapplication-config" content="assets/images/touch/browserconfig.xml")
+
+    // Disable tap highlight on IE
+    meta(name="msapplication-tap-highlight" content="no")
+
+    // Add to homescreen for Safari on iOS
+    meta(name="apple-mobile-web-app-capable" content="yes")
+    meta(name="apple-mobile-web-app-status-bar-style" content="#000")
+    meta(name="apple-mobile-web-app-title" content="application")
+    link(href="assets/images/touch/safari-pinned-tab.svg" rel="mask-icon" color="#000")
+    link(rel="apple-touch-icon" sizes="57x57" href="assets/images/touch/apple-icon-57x57.png")
+    link(rel="apple-touch-icon" sizes="192x192" href="assets/images/touch/apple-icon-precomposed.png")
+    // Standard favicon
+    link(rel="icon" type="image/png" sizes="16x16" href="assets/images/touch/favicon-16x16.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="assets/images/touch/favicon-32x32.png")
+    link(rel="shortcut icon" href="assets/images/touch/favicon.ico")
+
+    link(rel="stylesheet" href="./assets/css/vendor.css")
+    link(rel="stylesheet" href="./assets/css/style.css")
+    <!--[if lt IE 9]>
+      script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+      script(src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js")
+    <![endif]-->
+    block

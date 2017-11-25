@@ -1,0 +1,5 @@
+@mixin svg($width, $height, $fill: #000) {
+  width: $width;
+  height: $height;
+  fill: $fill;
+}

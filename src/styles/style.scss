@@ -1,0 +1,9 @@
+@import './global/variables';
+@import './global/functions';
+@import './global/fonts';
+@import './global/mixins';
+@import './global/extends';
+@import './global/scaffolding';
+// @import './global/sprite';
+
+@import '../blocks/**/*.scss';

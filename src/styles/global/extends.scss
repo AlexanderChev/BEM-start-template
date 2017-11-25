@@ -1,0 +1,44 @@
+%container {
+  width: 95%;
+  max-width: 1800px;
+  margin: 0 auto;
+  @include tablet {
+    width: 94%;
+  }
+  @include mobile {
+    width: 93%;
+  }
+}
+
+%clearfix {
+  clear: both;
+
+  &:after,
+  &:before {
+    content: '';
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+%block-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+%centered-auto {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  margin: auto;
+}
+
+

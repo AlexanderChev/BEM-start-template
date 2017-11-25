@@ -1,0 +1,23 @@
+include ../blocks/head/head
+include ../blocks/browsehappy/browsehappy
+include ../blocks/header/header
+include ../blocks/footer/footer
+
+block vars
+doctype html
+html.page.no-js(lang="ru")
+  +head()
+  body
+    +browsehappy()
+    .page__content
+      .page__wrapper
+        block header
+          +header(header)
+        block content
+      block footer
+        .page__footer
+          +footer()
+
+    block scripts
+      script(src="./assets/js/vendor.js")
+      script(src="./assets/js/script.js")
