@@ -10,9 +10,9 @@ module.exports = {
     lintScripts: ['src/scripts/**/*.js', 'src/blocks/**/*.js', '!src/scripts/lib/**/*.*'],
     lintTemplates: ['src/pages/**/*.pug', 'src/blocks/**/*.pug'],
     public: 'src/public/**/{*,.*}',
-    spritePng: 'src/images/icons/**/*.png',
+    spritePng: ['src/images/icons/**/*.png', 'src/blocks/*/images/icons/**/*.png'],
     spritePngStyles: 'src/styles/global',
-    spriteSvg: 'src/images/icons/**/*.svg',
+    spriteSvg: ['src/images/icons/**/*.svg', 'src/blocks/*/images/icons/**/*.svg'],
     build: 'build',
     imagesBlock: 'src/blocks/*/images/**/*.{jpg,jpeg,gif,png,svg}',
     fonts: [

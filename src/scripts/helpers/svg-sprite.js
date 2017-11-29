@@ -1,4 +1,4 @@
-export var svgSprite = function (window, document) {
+;(function (window, document) {
   'use strict';
   var file = 'assets/images/sprite.svg', // путь к файлу спрайта на сервере
     revision = 1; // версия спрайта
@@ -35,4 +35,4 @@ export var svgSprite = function (window, document) {
     }
     request.send();
   } catch (e) {}
-};
+})(window, document);

@@ -4,6 +4,7 @@
 @import './global/mixins';
 @import './global/extends';
 @import './global/scaffolding';
-// @import './global/sprite';
+// @import './global/sprite-png';
+@import './global/sprite-svg';
 
 @import '../blocks/**/*.scss';

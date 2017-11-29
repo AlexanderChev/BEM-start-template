@@ -225,6 +225,9 @@ package-lock.json
 yarn.lock
 prepros-6.config
 
+src/styles/global/sprite-svg.scss
+src/styles/global/sprite-png.scss
+
 # Design
 psd
 design

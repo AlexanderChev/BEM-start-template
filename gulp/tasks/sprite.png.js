@@ -10,7 +10,7 @@ module.exports = function() {
           // retinaImgName: 'sprite@2x.png',
           algorithm: 'binary-tree',
           imgName: 'sprite.png',
-          cssName: 'sprite.scss',
+          cssName: 'sprite-png.scss',
           cssFormat: 'css',
           padding: 10,
           imgPath: './assets/images/sprite.png',

@@ -1,13 +1,10 @@
 'use strict';
 
-// import './helpers/sw-precache';
-import { svgSprite } from './helpers/svg-sprite';
-
-//inline svg-sprite + localStorage
-svgSprite(window, document);
-
 //svg4everybody
 svg4everybody();
+
+// import './helpers/sw-precache';
+import './helpers/svg-sprite';
 
 // Modules
 let cache = {};

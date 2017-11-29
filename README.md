@@ -44,7 +44,7 @@ $ npm run ab block-1 js json img # создаст block-1.pug, block-1.scss, blo
 # Удаление блока: npm run rb ИМЯ БЛОКА
 $ npm run rb block # удалит все файлы в папке block
 ```
-## Назначение папок
+### Назначение папок
 
 ```bash
 gulp/
@@ -55,7 +55,7 @@ src/               # Исходные файлы
   blocks/          # - блоки проекта
   fonts/           # - шрифты
   images/          # - добавочные изображения
-      touch/       # - фавиконки + (manifest, browserconfig)
+      touch/       # - фавиконки, manifest, browserconfig
       icons/       # - изображения для генерации svg, png спрайтов
   pages/           # - страницы проекта
   public/          # - другие файлы

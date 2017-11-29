@@ -77,4 +77,6 @@ mixin head(data)
       script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
       script(src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js")
     <![endif]-->
+    script.
+      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
     block
