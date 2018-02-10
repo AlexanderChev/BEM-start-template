@@ -8,11 +8,8 @@ cache:
   directories:
     - node_modules
 
-git:
-  depth: 1
-
-before_install:
-  - npm install -g gulp-cli
-
 script:
   - gulp build
+
+notifications:
+  email: true

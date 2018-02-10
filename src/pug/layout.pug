@@ -1,17 +1,14 @@
-include ../blocks/head/head
-include ../blocks/browsehappy/browsehappy
-include ../blocks/header/header
-include ../blocks/footer/footer
-include ../blocks/icon/icon
+include mixins.pug
 
 block vars
+
 doctype html
 html.page.no-js(lang="ru")
   +head()
   body
     +browsehappy()
-    .page__content
-      .page__wrapper
+    .page__inner
+      .page__content
         block header
           +header(header)
         block content

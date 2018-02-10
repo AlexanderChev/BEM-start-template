@@ -2,7 +2,7 @@
 
 module.exports = {
   path: {
-    templates: ['src/pages/*.pug', '!src/pages/_*.pug'],
+    templates: ['src/pages/*.pug'],
     blocksData: ['src/blocks/*/data/**/*.json', '!src/blocks/*/data/**/_*.json'],
     styles: 'src/styles/*.scss',
     scripts:'src/scripts/*.js',
